@@ -26,4 +26,11 @@ NOP, 7
 NOT, 9
 ```
 
+## Pre-made .idx
+If you don't want to generate them, you can download some .idx files that I generated previously via .idxGenerator:
+
+| **Processor**                                                                                                               | **Version**    | **.pdf**     | **.idx**     |
+|-----------------------------------------------------------------------------------------------------------------------------|----------------|--------------|--------------|
+| Intel® 64 and IA-32 Architectures Software Developer’s Manual. _Volume 2 (2A, 2B, 2C, & 2D): Instruction Set Reference, A-Z_ | September 2023 | [Download](https://cdrdv2.intel.com/v1/dl/getContent/671110)     | [Download](https://github.com/callbrok/.idxGenerator/blob/6fc4b5f430adb5a08c7790c892afcf1d46103fd3/x86.idx)     |
+
 ## How to Use
