@@ -27,7 +27,7 @@ NOT, 9
 ```
 
 ## Pre-made .idx
-If you don't want to generate them, you can download some .idx files that I generated previously via .idxGenerator:
+If you don't want to generate them, you can download some .idx files that I generated previously via .idxGenerator
 
 | **Processor**                                                                                                               | **Version**    | **.pdf**     | **.idx**     |
 |-----------------------------------------------------------------------------------------------------------------------------|----------------|--------------|--------------|
