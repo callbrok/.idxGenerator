@@ -1,5 +1,5 @@
 
-# Processor Manual Index File Generator
+# x86 Processor Manual Index File Generator
 
 <img align="left" width="400" height="600" src="https://github.com/callbrok/.idxGenerator/blob/dc353b82151124a5b12490ff8c9b8df92f93e8e9/screenshot.png">
 
