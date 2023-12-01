@@ -38,7 +38,7 @@ Edit the configuration file _configuration.properties_, and at the `pdf_path` pr
 
 ```
 # PDF PATH
-pdf_path = C:\\Users\\Marco\\Desktop\\24594.pdf
+pdf_path = C:\\Users\\Marco\\Desktop\\manual.pdf
 
 # PROCESSOR ARCHITECTURE
 processor_arc = "x86Intel"
