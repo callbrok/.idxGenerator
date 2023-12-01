@@ -34,3 +34,14 @@ If you don't want to generate them, you can download some .idx files that I gene
 | Intel® 64 and IA-32 Architectures Software Developer’s Manual. _Volume 2 (2A, 2B, 2C, & 2D): Instruction Set Reference, A-Z_ | September 2023 | [Download](https://cdrdv2.intel.com/v1/dl/getContent/671110)     | [Download](https://github.com/callbrok/.idxGenerator/blob/6fc4b5f430adb5a08c7790c892afcf1d46103fd3/x86.idx)     |
 
 ## How to Use
+Edit the configuration file _configuration.properties_, and at the `pdf_path` property indicate the absolute path to the manual in pdf format from which to generate the processor manual index file (*.idx).
+
+```
+# PDF PATH
+pdf_path = C:\\Users\\Marco\\Desktop\\24594.pdf
+
+# PROCESSOR ARCHITECTURE
+processor_arc = "x86Intel"
+```
+
+Once you run the processor manual index file (*.idx) will be generated, to use it within Ghira, you need to copy the .idx file and the pdf manual to `..\ghidra_folder\Ghidra\Processors\x86\data\manuals`.
