@@ -6,29 +6,31 @@ import java.util.Properties;
 
 public class IdxCreator {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
 
         Properties configurationProperties = new Properties();
         configurationProperties.load(new FileInputStream("configuration.properties"));
+
         String architecture;
+
 
         // Select which .idx file create
         List<IndexLine> idxList = switch (configurationProperties.getProperty("processor_arc")) {
             case "x86Intel" -> {
-                Intelx86Processors x86Gen = new Intelx86Processors();
+                Intelx86Processors x86Intel = new Intelx86Processors();
                 architecture = "x86";
-                yield x86Gen.x86(configurationProperties.getProperty("pdf_path"));
+                yield x86Intel.x86(configurationProperties.getProperty("pdf_path"));
             }
             default -> {
-                Intelx86Processors x86Gen2 = new Intelx86Processors();
+                Intelx86Processors x86Intel = new Intelx86Processors();
                 architecture = "x86";
-                yield x86Gen2.x86(configurationProperties.getProperty("pdf_path"));
+                yield x86Intel.x86(configurationProperties.getProperty("pdf_path"));
             }
         };
 
         String pdfFilePath = configurationProperties.getProperty("pdf_path");
         String pdfFileName = pdfFilePath.substring(pdfFilePath.lastIndexOf("\\")+1);
-        String idxFileName =  architecture + ".idx";
+        String idxFileName = architecture + ".idx";
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(idxFileName))) {
 
